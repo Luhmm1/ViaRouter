@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/squizlabs/PHP_CodeSniffer/3.6.0/phpcs.xsd"
+         name="Leo's Coding Rules">
+  <description>A collection of several strict coding rules.</description>
+
+  <file>./src</file>
+  <file>./tests</file>
+
+  <arg name="extensions" value="php"/>
+  <arg name="colors"/>
+
+  <!-- PSR-12 -->
+  <rule ref="PSR12"/>
+
+  <!-- Generic -->
+  <rule ref="Generic.Arrays.ArrayIndent"/>
+  <rule ref="Generic.Arrays.DisallowLongArraySyntax"/>
+
+  <rule ref="Generic.CodeAnalysis.AssignmentInCondition"/>
+  <rule ref="Generic.CodeAnalysis.EmptyPHPStatement"/>
+  <rule ref="Generic.CodeAnalysis.ForLoopShouldBeWhileLoop"/>
+  <rule ref="Generic.CodeAnalysis.JumbledIncrementer"/>
+  <rule ref="Generic.CodeAnalysis.UnconditionalIfStatement"/>
+  <rule ref="Generic.CodeAnalysis.UnnecessaryFinalModifier"/>
+  <rule ref="Generic.CodeAnalysis.UselessOverridingMethod"/>
+
+  <rule ref="Generic.ControlStructures.DisallowYodaConditions"/>
+
+  <rule ref="Generic.Files.ExecutableFile"/>
+  <rule ref="Generic.Files.InlineHTML"/>
+
+  <rule ref="Generic.Formatting.SpaceAfterCast"/>
+
+  <rule ref="Generic.Functions.CallTimePassByReference"/>
+
+  <rule ref="Generic.NamingConventions.AbstractClassNamePrefix"/>
+  <rule ref="Generic.NamingConventions.CamelCapsFunctionName"/>
+  <rule ref="Generic.NamingConventions.ConstructorName"/>
+  <rule ref="Generic.NamingConventions.InterfaceNameSuffix"/>
+  <rule ref="Generic.NamingConventions.TraitNameSuffix"/>
+
+  <rule ref="Generic.PHP.BacktickOperator"/>
+  <rule ref="Generic.PHP.CharacterBeforePHPOpeningTag"/>
+  <rule ref="Generic.PHP.DeprecatedFunctions"/>
+  <rule ref="Generic.PHP.DisallowRequestSuperglobal"/>
+  <rule ref="Generic.PHP.DiscourageGoto"/>
+  <rule ref="Generic.PHP.ForbiddenFunctions"/>
+  <rule ref="Generic.PHP.NoSilencedErrors"/>
+  <rule ref="Generic.PHP.SAPIUsage"/>
+  <rule ref="Generic.PHP.Syntax"/>
+
+  <rule ref="Generic.Strings.UnnecessaryStringConcat"/>
+
+  <rule ref="Generic.WhiteSpace.ArbitraryParenthesesSpacing"/>
+  <rule ref="Generic.WhiteSpace.LanguageConstructSpacing"/>
+  <rule ref="Generic.WhiteSpace.SpreadOperatorSpacingAfter"/>
+</ruleset>

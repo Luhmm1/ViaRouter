@@ -1,0 +1,16 @@
+# Composer
+/vendor/
+/composer.lock
+
+# JetBrains
+/.idea/
+
+# PHPCS
+/phpcs.xml
+
+# PHPStan
+/phpstan.neon
+
+# PHPUnit
+/.phpunit.cache/
+/phpunit.xml
